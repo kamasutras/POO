@@ -50,3 +50,26 @@ function manipularCadenas() {
 
     alert("La longitud del mensaje es: " + longitud + "\nEl antepenúltimo carácter es: " + antepenultimoCaracter);
 }
+
+/*
+jercicio 5:
+HTML:
+•    Crear un Parrafo <p> con la siguiente descripción:
+“Suma de Valores tomando índices de un arreglo”
+•    Crear un nuevo Botón en HTML siguiendo el esquema de los demás ejercicios creados.
+•    Llamar a la función “Suma_indices()” a través del atributo onclick.
+JS:
+•    Crear una función llamada “Suma_indices()”
+•    Crear un arreglo  de largo 7 (1,2,3,4,5,6,7)
+•    Sumar el ultimo valor, con el penúltimo más el 1 valor de las posiciones
+•    Mostrar el resultado en el HTML con un Alert
+*/
+function sumaIndice(){ 
+    let arreglo = [1, 2, 3, 4, 5, 6, 7];
+    let ultimoValor = arreglo[arreglo.length - 1];
+    let penultimoValor = arreglo[arreglo.length - 2];
+    let primerValor = arreglo[0];
+    let suma = ultimoValor + penultimoValor + primerValor;
+    
+    alert("El resultado de la suma es: " + suma);
+}
