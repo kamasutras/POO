@@ -42,8 +42,11 @@ alert("suma: "+suma + "\nresta: "+resta + "\nmultiplicacion: "+multiplicar + "\n
 // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'Direccion' y 'n-casa'.
 // Luego, muestra la longitud del mensaje y el antepenultimo carácter en el mensaje.
 function manipularCadenas() {
-let direccion = avenida alpatacal;
-let numCasa =  9110;
+    let direccion = "alpatacal";
+    let numCasa = 9110;
+    let mensaje = "Mi dirección es: " + direccion + " número de casa: " + numCasa;
+    let longitud = mensaje.length;
+    let antepenultimoCaracter = mensaje.charAt(longitud - 3);
 
-alert("");
+    alert("La longitud del mensaje es: " + longitud + "\nEl antepenúltimo carácter es: " + antepenultimoCaracter);
 }
