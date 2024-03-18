@@ -1,4 +1,4 @@
-
+console.log("conectado correctamente");
 // Ejercicio 1: Declaración de variables
 // Instrucciones: Declara dos variables numéricas llamadas 'actual' y 'nac'.
 // Luego, calcula y muestra en un mensaje la edad actual basada en el año de nacimiento.
