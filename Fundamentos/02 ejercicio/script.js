@@ -4,6 +4,7 @@ console.log("conectado correctamente");
 // Luego, calcula y muestra en un mensaje la edad actual basada en el año de nacimiento.
 
 function declararVariables() {
+    
 let actual = 2023;
 let nac = 2004;
 let resultado = actual - nac;
