@@ -45,5 +45,5 @@ function manipularCadenas() {
 let direccion = avenida alpatacal;
 let numCasa =  9110;
 
-alert(direccion.length[0])
+alert("");
 }
