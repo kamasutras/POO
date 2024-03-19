@@ -5,3 +5,8 @@ body{
 button{ 
     background:rgb(147, 219, 189);
 }
+
+
+h1{
+    text-align: center;
+}
