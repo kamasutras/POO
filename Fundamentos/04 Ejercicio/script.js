@@ -40,5 +40,5 @@ function operandoMetodos() {
 function modificarMensaje() {
     let mensajeInicial = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
 
-  
+
 }
