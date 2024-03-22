@@ -50,10 +50,10 @@ function modificarMensaje() {
     valoresEliminados.push(mensajeModificado.pop());
     valoresEliminados.push(mensajeModificado.pop());
 
-    // agregar valores nuevos
+    // Agregar valores nuevos
     mensajeModificado.unshift("Somos","Nosotros");
     mensajeModificado.push("Los","Estudiantes","De","Programacion","Los","Mejores","Del mundo");
-    
+
 
     alert(`Mensaje inicial:\n ${mensaje}`);
     alert(`Valores eliminados:\n  ${valoresEliminados}`);
