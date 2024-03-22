@@ -51,15 +51,9 @@ function modificarMensaje() {
     valoresEliminados.push(mensajeModificado.pop());
 
     // agregar valores nuevos
-    mensajeModificado.unshift("Nosotros");
-    mensajeModificado.unshift("Somos");
-    mensajeModificado.push("Los");
-    mensajeModificado.push("Estudiantes");
-    mensajeModificado.push("De");
-    mensajeModificado.push("Programacion");
-    mensajeModificado.push("Los\n");
-    mensajeModificado.push("Mejores");
-    mensajeModificado.push("Del mundo");
+    mensajeModificado.unshift("Somos","Nosotros");
+    mensajeModificado.push("Los","Estudiantes","De","Programacion","Los","Mejores","Del mundo");
+    
 
     alert(`Mensaje inicial:\n ${mensaje}`);
     alert(`Valores eliminados:\n  ${valoresEliminados}`);
