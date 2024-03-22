@@ -10,7 +10,6 @@ function operandoMetodos() {
     alert(`El método push() sirve para agregar uno o más elementos al final de un arreglo:\n ${elementos}\nValores agregados: ${agregados}`);
 
     // Metodo unshift()
-    elementos = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
     let inicioAgregados = [];
     elementos.unshift(-8, -6, -4, -2, 0);
     inicioAgregados.push(-8, -6, -4, -2, 0);
@@ -19,7 +18,6 @@ function operandoMetodos() {
 
     //  Metodo shift()
     let primerValor = [];
-    elementos = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
     elementos.shift();
     primerValor.push(elementos.shift());
 
@@ -27,7 +25,6 @@ function operandoMetodos() {
 
     // Metodo pop()
     const eliminados = [];
-    elementos = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
     elementos.pop();
     eliminados.push(elementos.pop());
 
@@ -38,7 +35,34 @@ function operandoMetodos() {
 
 
 function modificarMensaje() {
-    let mensajeInicial = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
+    const mensaje = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
+    const mensajeModificado = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
+    let valoresEliminados = [];
 
+    // Guarda valores eliminados
+    valoresEliminados.push(mensajeModificado.shift());
+    valoresEliminados.push(mensajeModificado.shift());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+    valoresEliminados.push(mensajeModificado.pop());
+
+    // agregar valores nuevos
+    mensajeModificado.unshift("Nosotros");
+    mensajeModificado.unshift("Somos");
+    mensajeModificado.push("Los");
+    mensajeModificado.push("Estudiantes");
+    mensajeModificado.push("De");
+    mensajeModificado.push("Programacion");
+    mensajeModificado.push("Los\n");
+    mensajeModificado.push("Mejores");
+    mensajeModificado.push("Del mundo");
+
+    alert(`Mensaje inicial:\n ${mensaje}`);
+    alert(`Valores eliminados:\n  ${valoresEliminados}`);
+    alert(`Mensaje modificado:\n  ${mensajeModificado}`);
 
 }
