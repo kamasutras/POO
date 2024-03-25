@@ -38,6 +38,7 @@ function modificarMensaje() {
     const mensaje = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
     const mensajeModificado = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
     let valoresEliminados = [];
+    let valoresAgregados = [];
 
     // Guarda valores eliminados
     valoresEliminados.push(mensajeModificado.shift());
@@ -51,12 +52,14 @@ function modificarMensaje() {
     valoresEliminados.push(mensajeModificado.pop());
 
     // Agregar valores nuevos
-    mensajeModificado.unshift("Somos","Nosotros");
-    mensajeModificado.push("Los","Estudiantes","De","Programacion","Los","Mejores","Del mundo");
-
+    mensajeModificado.unshift("Somos", "Nosotros");
+    mensajeModificado.push("Los", "Estudiantes", "De", "Programacion", "Los", "Mejores", "Del mundo");
 
     alert(`Mensaje inicial:\n ${mensaje}`);
     alert(`Valores eliminados:\n  ${valoresEliminados}`);
     alert(`Mensaje modificado:\n  ${mensajeModificado}`);
+  //  alert(`Valores agregados:\n  ${valoresAgregados}`);
+
+
 
 }
