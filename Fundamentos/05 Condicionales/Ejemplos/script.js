@@ -1,5 +1,6 @@
 //  funcion identificar si es mayor de edad
 function identificarMayorEdad() {
+    let resultado = "";
     let edad = prompt("Porfavor introdusca su edad: ");
 
     if (edad >= 18) {
