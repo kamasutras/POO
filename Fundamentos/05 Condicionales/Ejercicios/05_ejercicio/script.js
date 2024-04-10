@@ -1,5 +1,5 @@
 function verificarPuntos() {
-
+    let resultado = "";
     let puntaje = parseInt(prompt("Ingrese la cantidad de puntos que obtuvo:  "));
 
     if (puntaje >= 90) {
