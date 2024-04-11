@@ -3,7 +3,7 @@ function bucleWhile() {
     let contador = 1;
     let suma = 0;
     let array = [];
-
+   //ch
     //bucle while
 
     while (contador <= 10) {
