@@ -23,5 +23,5 @@ function bucleWhileCount() {
         count += 2;
     }
 
-    document.getElementById("resultado2").innerHTML = array;
+    document.getElementById("resultado2").innerHTML = array.join(",  ");
 }
