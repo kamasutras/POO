@@ -38,7 +38,7 @@ function noNegative(arr) {
         suma += array[i];
     }
 
-    //const suma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);
+    //let suma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);
 
     document.getElementById("elemento").innerHTML += `Los valores negativos han sido modificados: <h2>${array.join(", ")}</h2>`;
     document.getElementById("result").innerHTML += `La suma de los valores  modificados: <h2>${suma}</h2>`;
