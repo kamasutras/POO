@@ -16,7 +16,7 @@ while (j <= 5) {
 
 function noNegative(arr) {
     let array = [];
-    let l = parseInt(prompt("cuantos numeros quiere ingresar: "));
+    let l = parseInt(prompt("Ingrese la cantidad de valores que va a ingresar: "));
 
     for (let j = 1; j <= l; j++) {
         let numero = parseInt(prompt("Ingrese los valores: "));

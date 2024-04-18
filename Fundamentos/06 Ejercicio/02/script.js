@@ -16,10 +16,10 @@ while (j <= 5) {
 
 function noNegative() {
     let array = [];
-    let l = parseInt(prompt("Ingrese la cantidad d edatos numericos de su arreglo [n]: "));
+    let l = parseInt(prompt("Ingrese la cantidad de valores que va a ingresar: "));
 
     for (let j = 1; j <= l; j++) {
-        let numero = parseInt(prompt("Ingrese los valores de su arreglo: "));
+        let numero = parseInt(prompt("Ingrese los valores: "));
         array.push(numero);
     }
 
