@@ -22,7 +22,7 @@ function noNegative(arr) {
         let numero = parseInt(prompt("Ingrese los valores: "));
         array.push(numero);
     };
-    document.getElementById("elemento").innerHTML = `Los valores sin modificar: <h2>${array.join(", ")}</h2>`;
+    document.getElementById("elemento").innerHTML = `<p  style="color:  rgb(127, 255, 200);">Los valores sin modificar:</p> <h2 style="color: rgb(255, 128, 0);">${array.join(", ")}</h2>`;
 
     for (let i = 0; i < l; i++) {
         if (array[i] < 0) {
@@ -30,19 +30,7 @@ function noNegative(arr) {
         }
     };
 
-
-    // suma de los valores modificados
-    let suma = 0;
-
-    for (let i = 0; i < array.length; i++) {
-        suma += array[i];
-    }
-
-    //let suma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);
-
-    document.getElementById("elemento").innerHTML += `Los valores negativos han sido modificados: <h2>${array.join(", ")}</h2>`;
-    document.getElementById("result").innerHTML += `La suma de los valores  modificados: <h2>${suma}</h2>`;
-
+    document.getElementById("elemento").innerHTML += `<p  style="color:  rgb(127, 255, 200);">Los valores negativos han sido modificados:</p> <h2 style="color: rgb(255, 128, 0);">${array.join(", ")}</h2>`
 };
 
 /* Recordatorio: para no alterar los array en este caso 

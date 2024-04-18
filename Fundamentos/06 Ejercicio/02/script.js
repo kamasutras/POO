@@ -17,7 +17,7 @@ while (j <= 5) {
 function noNegative() {
     let array = [];
     let l = parseInt(prompt("Ingrese la cantidad d edatos numericos de su arreglo [n]: "));
-    
+
     for (let j = 1; j <= l; j++) {
         let numero = parseInt(prompt("Ingrese los valores de su arreglo: "));
         array.push(numero);
@@ -29,7 +29,17 @@ function noNegative() {
         }
     }
 
-    document.getElementById("elemento").innerHTML = `la suma de todos los elementos es: <h2>${array}`;
+    // suma de los valores modificados
+    let suma = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        suma += array[i];
+    }
+
+    //let suma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);
+
+
+    document.getElementById("elemento").innerHTML = `<p  style="color:  rgb(127, 255, 200);">la suma de todos los elementos es:</p> <h2 style="color: rgb(255, 128, 0);">${suma}</h2>`;
 }
 
 
