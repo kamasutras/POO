@@ -13,7 +13,7 @@ while (j <= 5) {
     array.push(valores);
     j++;
 }*/
-
+//
 function noNegative() {
     let array = [];
     let l = parseInt(prompt("Ingrese la cantidad de valores que va a ingresar: "));
@@ -42,7 +42,7 @@ function noNegative() {
     document.getElementById("elemento").innerHTML = `<p  style="color:  rgb(127, 255, 200);">la suma de todos los elementos es:</p> <h2 style="color: rgb(255, 128, 0);">${suma}</h2>`;
 }
 
-
+//hola
 
 // let array = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5];
 
