@@ -1,13 +1,12 @@
-function tablaDeN() {
-    let N = parseInt(document.getElementById("N").value);
-    let resultado = "";
+function invertirSTR() {
+    let strText = document.getElementById("strText").value;
+    let reversedStr = "";
 
-
-    for (let i = 1; i <= 10; i++) {
-        resultado += `${N} x ${i} = ${i * N}<br>`;
+    for (let i = strText.length - 1; i >= 0; i--) {
+        reversedStr += strText[i];
+        resultado = `<h2>La palabra invertida se escribe:</h2> <br>${reversedStr}`
     }
 
-
     document.getElementById("resultado").innerHTML = resultado;
-
+   // return reversedStr;
 }
