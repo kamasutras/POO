@@ -4,7 +4,7 @@ function tablaDeN() {
 
 
     for (let i = 1; i <= 10; i++) {
-        resultado += `${N} x ${i} = ${i * N}<br>`;
+        resultado += `<li>${N} x ${i} = ${i * N}</li><br>`;
     }
 
 
