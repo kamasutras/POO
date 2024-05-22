@@ -8,6 +8,6 @@ function obtenerPares() {
       // } 
     }
 
-    document.getElementById("resultado").innerHTML = `Los primeros  ${N}  números pares son:<br>  ${pares.join(", ")}`;
+    document.getElementById("resultado").innerHTML =` Los primeros  ${N}  números pares son:<br>  ${pares.join(", ")}`;
 
 }
