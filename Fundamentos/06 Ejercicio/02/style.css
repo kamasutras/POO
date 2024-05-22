@@ -7,3 +7,10 @@ section p {
 body{
     background-color: rgba(00,100,127);
 }
+
+#btn{
+    background-color: rgb(31, 119, 190);
+}
+#btn:hover{
+    background-color: seagreen;
+}

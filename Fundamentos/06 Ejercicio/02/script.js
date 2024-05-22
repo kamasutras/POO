@@ -35,11 +35,11 @@ function noNegative() {
     for (let i = 0; i < array.length; i++) {
         suma += array[i];
     }
-
+    
     //let suma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);
+    resultado = `<p  style="color:  rgb(127, 255, 200);">la suma de todos los elementos  del arreglo es:</p> <h2 style="color: rgb(255, 128, 0);">${suma}</h2>`;
 
-
-    document.getElementById("elemento").innerHTML = `<p  style="color:  rgb(127, 255, 200);">la suma de todos los elementos es:</p> <h2 style="color: rgb(255, 128, 0);">${suma}</h2>`;
+    document.getElementById("elemento").innerHTML = resultado;
 }
 
 //hola
