@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function numeroMayorUno() {
     let numeros = [];
 
@@ -32,7 +31,6 @@ function numeroMayorDos() {
 
     document.getElementById("resultado2").innerHTML = `El número mayor es: ${mayor}`;
 }
-=======
 
 
 function obtenerNumeroMayor() {
@@ -66,5 +64,3 @@ function obtenerNumeroMayor() {
     document.getElementById("resultado").innerHTML = "El número mayor es: " + numeroMayor;
 } */
 
-
->>>>>>> c014fb39a3c9dd544bc51c89e84bdac294a22dda
