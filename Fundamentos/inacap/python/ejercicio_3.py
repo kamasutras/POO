@@ -3,7 +3,7 @@ for i in range(1,6,1) :
     nota = float(input(f"Ingrese nota {i}-> "))
     acumuladorNotas = acumuladorNotas + nota
 
-promedio = acumuladorNotas / 5 
+    promedio = acumuladorNotas / 5 
 
 print(f"Promedio final: {promedio}")
 
