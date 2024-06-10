@@ -1,19 +1,19 @@
+
+maxima = 0
+minima = 100
+tmpMedidas = []
 print('-' * 40)
 print("Detectar temperatura mínima y máxima :D")
 print('-' * 40)
-
-muchaCalor = 0
-menosCalor = 100
-
 dias = int(input("Cantidad de días para medir la temperatura -> "))
-
 for i in range(1, dias + 1):
     temperatura = int(input(f"Temperatura del día {i} -> "))
-    
-    if temperatura > muchaCalor:
-        muchaCalor = temperatura
-    if temperatura < menosCalor:
-        menosCalor = temperatura
-
-print(f"Día con más calor: {muchaCalor}")
-print(f"Día con menos calor: {menosCalor}")
+    tmpMedidas.append(temperatura)
+    if temperatura > maxima:
+        maxima = temperatura
+    if temperatura < minima:
+        minima = temperatura
+        
+print(f"temperaturas tomadas en los ultimos {i} dias: {tmpMedidas}")
+print(f"Día con más calor: {maxima}")
+print(f"Día con menos calor: {minima}")
