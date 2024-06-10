@@ -17,8 +17,4 @@ sueldoExtras = horasExtras * valorHora * 2
 sueldoTotal = sueldoBase + sueldoExtras
     
     
-print(f"\nEmpleado: {nombre}")
-print(f"Sueldo base: ${sueldoBase:.2f}")
-print(f"Pago por horas extras: ${sueldoExtras:.2f}")
-print(f"Horas extras no pagadas: {horasExtrasNoPagadas} horas")
-print(f"Sueldo total a pagar: ${sueldoTotal:.2f}")
+print(f"\nEmpleado: {nombre}\nSueldo base: ${sueldoBase}\nPago por horas extras: ${sueldoExtras}\nHoras extras no pagadas: {horasExtrasNoPagadas} horas\n")
