@@ -18,7 +18,7 @@ sueldoTotal = sueldoBase + sueldoExtras
     
     
 print(f"\nEmpleado: {nombre}")
-print(f"Sueldo base: ${sueldoBase:.2f}")
-print(f"Pago por horas extras: ${sueldoExtras:.2f}")
+print(f"Sueldo base: ${sueldoBase}")
+print(f"Pago por horas extras: ${sueldoExtras}")
 print(f"Horas extras no pagadas: {horasExtrasNoPagadas} horas")
-print(f"Sueldo total a pagar: ${sueldoTotal:.2f}")
+print(f"Sueldo total a pagar: ${sueldoTotal}")
