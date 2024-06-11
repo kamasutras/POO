@@ -1,10 +1,11 @@
 # Manejo de listas
 
 cantidadNotas = int(input("Cuantas notas quieres agregar? -> "))
-notas = [0] * cantidadNotas
+notas = [0] * cantidadNotas 
 
 
 for i in range(0, cantidadNotas, 1):
+    
     notas[i] = float(input(f"Ingresa la nota  {i+1}-> "))
 else:
     print(f"Finalizacion de la lectura de notas...\n\n\n")
