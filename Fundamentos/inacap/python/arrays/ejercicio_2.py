@@ -17,6 +17,7 @@ for i in range(dias ):
     
     if temperatura > maxima:
         maxima = temperatura
+        
     if temperatura < minima:
         minima = temperatura
         
