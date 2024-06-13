@@ -21,8 +21,6 @@ for i in range(dias ):
     if temperatura < minima:
         minima = temperatura
         
-        
-        
 print(f"\n\ntemperaturas tomadas en los ultimos {i} dias: {tmpMedidas}")
 print(f"Día con más calor: {maxima}")
 print(f"Día con menos calor: {minima}")
