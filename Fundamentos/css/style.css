@@ -30,9 +30,9 @@ body {
     width: 90em;
     height: 75%;
     margin:25px;
-    padding:10%;
+    padding:55px 55px 55px 0px;
     padding-bottom: 50%;
-    background-color: rgb(219, 84, 84);
+    background-color: rgb(255, 0, 0);
 }
 .bloques-1{
     position: absolute;
@@ -53,6 +53,7 @@ body {
     background-color: yellow;
     width: 30%; 
     height: 50%;
+    left:22px;
 }
 
 .bloque-inferior{
@@ -60,5 +61,6 @@ body {
     position: absolute;
     width: 96%;
     height: 25%;
-    top: 60%;
+    top: 67%;
+    left:25px;
 }
