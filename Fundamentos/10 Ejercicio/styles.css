@@ -1,10 +1,11 @@
 body {
-    background-image: url("https://img.freepik.com/vector-gratis/fondo-mesa-poquer-diseno-plano_23-2151016809.jpg?w=1380&t=st=1721318978~exp=1721319578~hmac=d13bf131c47a114b06f5f6db195f33a9050a94d811f503f62a47c19e08ffa7c2");
+    background-image: url("mesa.jpg");
     color: #ffffff;
 }
 
+
 .navbar {
-    background-color: #1c1c1c;
+    background-color: #910303;
 }
 
 .navbar-brand,
@@ -12,7 +13,16 @@ body {
     color: #ffffff !important;
 
 }
-
+.text-descripcion{
+    text-align: center;
+    margin-top: 50px;
+}
+.text-center{
+    font-size: 3em;
+    color: #ffd700; /* Color dorado */
+    text-shadow: 2px 2px 4px #000; /* Sombra para el texto */
+    margin: 20px;
+}
 
 .form-control {
     border: 2px solid #ffcc00;
