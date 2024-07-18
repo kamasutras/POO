@@ -1,8 +1,7 @@
-
 let count = 0;
 
-function countCards(card) {
-    switch(card) {
+function contadorCartas(carta) {
+    switch(carta) {
         case '2':
         case '3':
         case '4':
@@ -22,7 +21,7 @@ function countCards(card) {
             count -= 1;
             break;
         default:
-            alert("Agrega un valor valido (Asegurese que J, Q, K sean mayusculas)");
+            alert("Agrega un valor valido :(");
             break;
     }
 
@@ -35,12 +34,12 @@ function countCards(card) {
 
 function cc() {
     count = 0; 
-    const input = document.getElementById("cardInput").value;
+    const input = document.getElementById("cardInput").value.trim().toUpperCase();
     const cards = input.split(',').map(card => card.trim());
     let result;
 
     cards.forEach(card => {
-        result = countCards(card);
+        result = contadorCartas(card);
     });
 
     document.getElementById("resultado").innerHTML = "<h2>" + result + "</h2>";

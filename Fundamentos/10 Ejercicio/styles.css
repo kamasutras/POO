@@ -1,5 +1,5 @@
 body {
-    background-color: #0b3d91;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-mesa-poquer-diseno-plano_23-2151016809.jpg?w=1380&t=st=1721318978~exp=1721319578~hmac=d13bf131c47a114b06f5f6db195f33a9050a94d811f503f62a47c19e08ffa7c2");
     color: #ffffff;
 }
 
@@ -13,30 +13,29 @@ body {
 
 }
 
-h2,
-h3 {
-    color: #ffcc00;
-
-}
 
 .form-control {
     border: 2px solid #ffcc00;
-
     background-color: #1c1c1c;
     color: #ffffff;
 }
 
 .btn-primary {
-    background-color: #ffcc00;
-    border-color: #ffcc00;
-    color: #1c1c1c;
+    background-color: #591010;
+    border-color: #000000;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #ffd700;
-    border-color: #ffd700;
+    background-color: #ff1100;
+    border-color: #744d4d;
 }
 
-#resultado h2 {
-    color: #ffcc00;
+
+.box{
+    padding: 70px;
+    margin: 100px;
+    background:rgba(51, 183, 51, 0.105);
+    border-radius: 25%;
+    border: 2px solid #ffffff;
 }
