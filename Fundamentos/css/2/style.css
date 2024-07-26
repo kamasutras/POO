@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+}
+.box {
+    margin: auto; 
+    padding: 80px;
+    background-color: #9FCAE0; 
+    width: 200px;
+
+}
+.box-padding{
+    background-color: #459FC7;
+    padding: 80px;
+}
+.box-border{
+    background-color:  #E4A685;
+    border: solid  #E4A685 80px; 
+}
+
+.border{
+    background-color: #D15B19;
+    padding: 90px;
+   /* border: solid #D15B19  80px; */
+
+}
