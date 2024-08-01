@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+    background-color: rgb(41, 115, 180);
+    justify-items: center;
+    justify-content: center;
+}
+.container {
+    margin-top: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+.result {
+    font-weight: bold;
+}
+.section {
+    margin-bottom: 30px;
+}
