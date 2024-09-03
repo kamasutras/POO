@@ -1,91 +1,64 @@
-
-// 1. Leer los datos de una persona (Nombre, apellidos, edad) y mostrarlos a través de una impresión.
-
-
+// 1. Leer los datos de una persona (Nombre, apellidos, edad) y mostrarlos en la consola.
 function mostrarDatos(nombre, apellidos, edad) {
     let resultado = `Nombre: ${nombre} ${apellidos}, Edad: ${edad}`;
-    document.getElementById("datosPersona").innerText = resultado;
+    console.log(resultado);
 }
-
 mostrarDatos("Juan", "Pérez", 30);
 
-// 2. Leer un número, dividirlo en 3 partes, sumar 10 y multiplicarlo por 2, luego mostrar el resultado (por pantalla y por impresora)
-
+// 2. Leer un número, dividirlo en 3 partes, sumar 10 y multiplicarlo por 2, luego mostrar el resultado en la consola.
 function calcularNumero(numero) {
     let parte = numero / 3;
     let resultado = (parte + 10) * 2;
-
-    document.getElementById("resultadoNumero").innerText = `Resultado: ${resultado}`;
+    console.log(`Resultado: ${resultado}`);
 }
-
 calcularNumero(15);
 
-
-// 3. Leer 2 números y deducir si están en orden creciente o decreciente.
-
+// 3. Leer 2 números y deducir si están en orden creciente o decreciente, mostrando el resultado en la consola.
 function determinarOrden(num1, num2) {
-    return num1 < num2 ? "Creciente" : "Decreciente";
+    let resultado = num1 < num2 ? "Creciente" : "Decreciente";
+    console.log(`El orden es: ${resultado}`);
 }
-console.log(determinarOrden(num1, num2))
 determinarOrden(5, 10);
 
-
-// 4. Leer 5 números, calcular su promedio e imprimir el resultado.
-
+// 4. Leer 5 números, calcular su promedio e imprimir el resultado en la consola.
 function calcularPromedio(num1, num2, num3, num4, num5) {
     let suma = num1 + num2 + num3 + num4 + num5;
     let promedio = suma / 5;
-
-    document.getElementById("promedioResultado").innerText = `Promedio: ${promedio}`;
+    console.log(`Promedio: ${promedio}`);
 }
+calcularPromedio(1.0, 2.0, 3.0, 4.0, 5.0);
 
-calcularPromedio(10, 20, 30, 40, 50);
-
-
-
-// 5. Calcular la suma de los N primeros números naturales. (N es ingresado por el usuario)
-
+// 5. Calcular la suma de los N primeros números naturales e imprimir el resultado en la consola.
 function sumaPrimerosN(n) {
-    let numeros = [];
     let suma = 0;
-
     for (let i = 1; i <= n; i++) {
-        numeros.push(i);
         suma += i;
     }
-
-    console.log(`Números naturales hasta ${n}: ${numeros.join(", ")}`);
     console.log(`Suma de los primeros ${n} números naturales: ${suma}`);
 }
-
 sumaPrimerosN(10);
 
-// 6. Escribir los 100 primeros números pares.
-
+// 6. Escribir los primeros N números pares e imprimirlos en la consola.
 function escribirPares(limite) {
     let pares = [];
     for (let i = 1; i <= limite; i++) {
         pares.push(i * 2);
     }
-    console.log(`Los primeros pares de ${limite}\nEs: ${pares.join(", ")}`);
+    console.log(`Los primeros ${limite} números pares son: ${pares.join(", ")}`);
 }
-
 escribirPares(10);
 
-// 7. Escribir los 100 primeros números impares.
-
+// 7. Escribir los primeros N números impares e imprimirlos en la consola.
 function escribirImpares(limite) {
     let impares = [];
     for (let i = 1; i <= limite; i++) {
         impares.push(i * 2 - 1);
     }
-    console.log(`Los primeros impares de ${limite}\nEs: ${impares.join(", ")}`);
+    console.log(`Los primeros ${limite} números impares son: ${impares.join(", ")}`);
 }
+escribirImpares(10);
 
-
-
-// 8. Sumar 5 números leídos por teclado.
-
+// 8. Sumar N números e imprimir el resultado en la consola.
 function sumarNumeros(numeros) {
     let suma = 0;
     for (let i = 0; i < numeros.length; i++) {
@@ -95,23 +68,15 @@ function sumarNumeros(numeros) {
 }
 sumarNumeros([10, 20, 30, 40, 50]);
 
-
-// 9. Modificar el anterior para que permita sumar N números. El valor de N se debe leer previamente por teclado.
+// 9. Sumar N números usando reduce e imprimir el resultado en la consola.
 function sumarNNumeros(numeros) {
     let suma = numeros.reduce((acc, val) => acc + val, 0);
     console.log(`Suma de los ${numeros.length} números: ${suma}`);
 }
 sumarNNumeros([10, 20, 30, 40, 50]);
 
-
-
-
-// 10. Leer 2 números y solicitar al usuario que ingrese la opción de sumarlos, restarlos, multiplicarlos y dividirlos según elija quien ingresa.
-function operar() {
-    let num1 = parseFloat(prompt("Ingrese el primer número:"));
-    let num2 = parseFloat(prompt("Ingrese el segundo número:"));
-    let operacion = prompt("Ingrese la operación a realizar (sumar, restar, multiplicar, dividir):");
-
+// 10. Operar con dos números según la operación especificada e imprimir el resultado en la consola.
+function operar(num1, num2, operacion) {
     let resultado;
     switch (operacion.toLowerCase()) {
         case 'sumar':
@@ -124,20 +89,16 @@ function operar() {
             resultado = num1 * num2;
             break;
         case 'dividir':
-            if (num2 !== 0) {
-                resultado = num1 / num2;
-            } else {
-                resultado = "No se puede dividir por cero";
-            }
+            resultado = num2 !== 0 ? num1 / num2 : "No se puede dividir por cero";
             break;
         default:
             resultado = "Operación no válida";
     }
     console.log(`Resultado de ${operacion}: ${resultado}`);
 }
+operar(10, 5, "sumar");
 
-//  11 Sumar N numeros pares
-
+// 11. Sumar N números pares e imprimir el resultado en la consola.
 function sumarNPares(n) {
     let suma = 0;
     let numero = 2;
@@ -145,28 +106,55 @@ function sumarNPares(n) {
         suma += numero;
         numero += 2;
     }
-    return suma;
-};
-console.log(sumarNPares(5));
+    console.log(`Suma de los primeros ${n} números pares: ${suma}`);
+}
+sumarNPares(5);
 
-// 12 Sumar los N primeros pares
+// 12. Sumar los N primeros pares e imprimir el resultado en la consola.
 function sumarNPrimerosPares(n) {
     let suma = 0;
-    for(let i = 1; i <= n; i++) {
-        suma+= 2*i;
+    for (let i = 1; i <= n; i++) {
+        suma += 2 * i;
     }
-    return suma;
-};
-console.log(sumarNPrimerosImpares(19));
+    console.log(`Suma de los primeros ${n} números pares: ${suma}`);
+}
+sumarNPrimerosPares(5);
 
-// 13 Sumar los N primeros impares
+// 13. Sumar los N primeros impares e imprimir el resultado en la consola.
 function sumarNImpares(n) {
     let suma = 0;
-    let numero = 1;
     for (let i = 0; i < n; i++) {
-        suma += numero;
-        numero += 2;
+        suma += (2 * i) + 1;
     }
-    return suma;
+    console.log(`Suma de los primeros ${n} números impares: ${suma}`);
 }
-sole.log(sumarNImpares(19));
+sumarNImpares(5);
+
+// 14. Sumar los N primeros impares usando una función reutilizable e imprimir el resultado en la consola.
+function sumarNPrimerosImpares(n) {
+    return sumarNImpares(n); // Reutiliza la función anterior
+}
+sumarNPrimerosImpares(5);
+
+// 15. Sumar los N primeros múltiplos de 3 e imprimir el resultado en la consola.
+function sumarNPrimerosMultiplosDe3(n) {
+    let suma = 0;
+    for (let i = 1; i <= n; i++) {
+        suma += 3 * i;
+    }
+    console.log(`Suma de los primeros ${n} múltiplos de 3: ${suma}`);
+}
+sumarNPrimerosMultiplosDe3(5);
+
+// Función adicional para encontrar la palabra más larga en una frase.
+function palabraMasLarga(frase) {
+    let palabras = frase.split(' ');
+    let palabraLarga = "";
+    for (let i = 0; i < palabras.length; i++) {
+        if (palabras[i].length > palabraLarga.length) {
+            palabraLarga = palabras[i];
+        }
+    }
+    console.log(`La palabra más larga es: ${palabraLarga}`);
+}
+palabraMasLarga("Esta es una frase de ejemplo para encontrar la palabra más larga");
