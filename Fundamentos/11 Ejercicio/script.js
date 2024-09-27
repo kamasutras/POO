@@ -1,3 +1,19 @@
+function login(element) {
+    if (element.innerText == "Login") {
+        element.innerText = "Logout";
+    } else {
+        element.innerText = "Login";
+    }
+}
+
+function sub(element) {
+    if (element.innerText == "Subscribirse") {
+        element.innerText = "Suscrito";
+    } else {
+        element.innerText = "Subscribirse";
+    }
+}
+
 
 function playOnMain(secondaryVideo) {
     var mainVideo = document.getElementById("mainVideo"); // Selecciona el video principal
