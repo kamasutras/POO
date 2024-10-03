@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccionar elemento - Query Selector</title>
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-        <h1 id="title">Hola mundo.</h1>
+    <h1 id="title">Hola, mundo</h1>
+    
+    <div class="nav">
+        <img src="logo.png" alt="logo">
+        <h1>Hola, mundo</h1>
+    </div>
 
-        <div>
-            <img src="src/logo.png" alt="">
+    <h3>Lorem Ipsem</h3>
+    
+    <img src="src/cat.jpg" alt="pet" id="pet-img"  width="300px"><br>
+    <button onclick="cambiarImagen()">Switch</button>
+    <button onclick="activarModoOscuro(this)">Cambiar al modo oscuro</button>
+    <button onclick="cambiarNuevoTitulo(this)">Cambiar nuevo titulo</button>
 
-        <h3>Modificar HTML y CSS.</h3>
-
-
-        <script>
-            //seleccionar elementode html
-            var h1 = document.querySelector("h1");
-            var title = document.querySelector("#title");
-
-            // combinar selectores
-
-            var logoImg = document.querySelector(".nav img");
-
-            // cambiar HTML y CSS
-
-            var h3 = document.querySelector("h3");
-            h3.innerText = "Nuevo Titulo"
-
-        </script>
+    <script src="script.js"></script>
 </body>
 </html>
