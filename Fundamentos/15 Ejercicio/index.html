@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="menu">
             <nav>
@@ -16,37 +17,41 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Contacto</a></li>
-
-
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="calculadora">
-        <div class="pantalla" id="pantalla">0</div>
-        <div class="botones">
-            <button class="borrar" id="borrar">C</button>
-            <button class="operador" onclick="handleOperator('/')">/</button>
-            <button class="operador" onclick="handleOperator('*')">*</button>
-            
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button class="operador" onclick="handleOperator('-')">-</button>
 
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button class="operador" onclick="handleOperator('+')">+</button>
 
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
 
-            <button class="igual" onclick="calculate()">=</button>
-            <button onclick="appendNumber('0')">0</button>
+    <div class="calculadora"> <!-- Contenedor padre que va a contener la calculadora-->
+
+        <div class="pantalla" id="pantalla">0</div> <!--Muestra el resultado y la operacion que vamos hacer -->
+
+        <div class="botones"> <!--Este div contiene los botones-->
+            <button class="operador" onclick="operadores('/')">/</button> <!--operador de division-->
+            <button class="operador" onclick="operadores('*')">*</button> <!--operador de multiplicacionn-->
+            <button class="operador" onclick="operadores('-')">-</button> <!--operador de resta-->
+            <button class="operador" onclick="operadores('+')">+</button> <!--operador de suma-->
+
+            <button onclick="numeros('7')">7</button>
+            <button onclick="numeros('8')">8</button>
+            <button onclick="numeros('9')">9</button>
+            <button onclick="numeros('4')">4</button>
+            <button onclick="numeros('5')">5</button>
+            <button onclick="numeros('6')">6</button>
+            <button onclick="numeros('1')">1</button>
+            <button onclick="numeros('2')">2</button>
+            <button onclick="numeros('3')">3</button>
+            <button onclick="numeros('0')">0</button>
+
+            <button class="borrar" id="borrar">Borrar</button> <!-- boton para borrar o limpiar la pantalla -->
+            <button class="igual" onclick="calculo()">Resultado</button>
+            <!-- Muestra el resultado de la operacion en la pantalla-->
+
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -1,55 +1,38 @@
-let currentInput = "";
-let operations = [];
-let display = document.getElementById("pantalla");
+let operacion = ""; // Almacena la operación en curso
 
-function updateDisplay(value) {
-    display.textContent = value;
-}
-
-function appendNumber(number) {
-    currentInput += number;
-    updateDisplay(currentInput);
-}
-
-function handleOperator(operator) {
-    if (currentInput === "") return;
-
-    operations.push(parseFloat(currentInput));
-    operations.push(operator);
-    currentInput = "";
-}
-
-function calculate() {
-    if (currentInput !== "") {
-        operations.push(parseFloat(currentInput));
+// Función para agregar números a la pantalla
+function numeros(numero) {
+    const pantalla = document.getElementById("pantalla");
+    if (pantalla.innerHTML === "0") {
+        pantalla.innerHTML = numero;
+    } else {
+        pantalla.innerHTML += numero;
     }
+    operacion += numero;
+}
 
-    let result = operations[0];
-
-    for (let i = 1; i < operations.length; i += 2) {
-        let operator = operations[i];
-        let nextNumber = operations[i + 1];
-
-        if (operator === "+") {
-            result += nextNumber;
-        } else if (operator === "-") {
-            result -= nextNumber;
-        } else if (operator === "*") {
-            result *= nextNumber;
-        } else if (operator === "/") {
-            result /= nextNumber;
-        }
+// Función para agregar operadores
+function operadores(operador) {
+    const pantalla = document.getElementById("pantalla");
+    if (operacion !== "") {
+        pantalla.innerHTML += " " + operador + " ";
+        operacion += operador;
     }
-
-    updateDisplay(result);
-    operations = [];
-    currentInput = result.toString();
 }
 
-function clearCalculator() {
-    currentInput = "";
-    operations = [];
-    updateDisplay(0);
+// Función para calcular el resultado
+function calculo() {
+    try {
+        const resultado = eval(operacion); // Usa eval para calcular la expresión
+        document.getElementById("pantalla").innerHTML = resultado;
+        operacion = resultado.toString(); // Reinicia con el resultado como base
+    } catch (error) {
+        document.getElementById("pantalla").innerHTML = "Error";
+        operacion = "";
+    }
 }
 
-document.getElementById("borrar").addEventListener("click", clearCalculator);
+function borrar() {
+    document.getElementById("pantalla").innerHTML = "0"; // Resetea la pantalla a "0"
+    operacion = ""; // Limpia la operación en curso
+}
