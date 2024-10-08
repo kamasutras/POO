@@ -22,15 +22,19 @@ function operadores(operador) {
 
 // Función para calcular el resultado
 function calculo() {
-    try {
-        const resultado = eval(operacion); // Usa eval para calcular la expresión
-        document.getElementById("pantalla").innerHTML = resultado;
-        operacion = resultado.toString(); // Reinicia con el resultado como base
-    } catch (error) {
-        document.getElementById("pantalla").innerHTML = "Error";
-        operacion = "";
+    const pantalla = document.getElementById("pantalla");
+    
+    // Verifica si la operación contiene solo números y operadores válidos
+    if (/^[0-9+\-*/\s]+$/.test(operacion)) {
+        const resultado = eval(operacion);
+        pantalla.innerHTML = resultado !== undefined ? resultado : 0; // Muestra el resultado o 0 si no hay resultado
+        operacion = resultado; // Actualiza la operación con el resultado
+    } else {
+        pantalla.innerHTML = "Error"; // Si la operación es inválida
+        operacion = ""; // Reinicia la operación
     }
 }
+
 
 function borrar() {
     document.getElementById("pantalla").innerHTML = "0"; // Resetea la pantalla a "0"
