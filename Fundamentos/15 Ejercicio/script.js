@@ -20,20 +20,40 @@ function operadores(operador) {
     }
 }
 
-// Función para calcular el resultado
 function calculo() {
     const pantalla = document.getElementById("pantalla"); // Obtiene el elemento de la pantalla
     
-    // Verifica si la operación contiene solo números y operadores válidos (usando una expresión regular)
-    if (/^[0-9+\-*/\s]+$/.test(operacion)) {
-        const resultado = eval(operacion); // Evalúa la operación como una expresión matemática
-        pantalla.innerHTML = resultado !== undefined ? resultado : 0; // Si el resultado es válido, lo muestra; si no, muestra "0"
-        operacion = resultado; // Actualiza 'operacion' con el resultado, para permitir continuar calculando con este
-    } else {
-        pantalla.innerHTML = "Error"; // Si la operación contiene caracteres inválidos, muestra "Error"
-        operacion = ""; // Reinicia la variable 'operacion'
+    let operadores = operacion.match(/[\d\.]+|[+\-*/]/g); // Divide la operación en números y operadores
+    let resultado = parseFloat(operadores[0]); // Comienza con el primer número
+    
+    for (let i = 1; i < operadores.length; i += 2) {
+        let operador = operadores[i];
+        let numero = parseFloat(operadores[i + 1]);
+        
+        switch (operador) {
+            case '+':
+                resultado += numero;
+                break;
+            case '-':
+                resultado -= numero;
+                break;
+            case '*':
+                resultado *= numero;
+                break;
+            case '/':
+                resultado /= numero;
+                break;
+            default:
+                pantalla.innerHTML = "Error"; // Si el operador es inválido
+                operacion = ""; // Reinicia la variable 'operacion'
+                return;
+        }
     }
+    
+    pantalla.innerHTML = resultado !== undefined ? resultado : 0; // Muestra el resultado
+    operacion = resultado; // Actualiza 'operacion' con el resultado para continuar calculando
 }
+
 
 // Función para borrar la operación y reiniciar la calculadora
 function borrar() {
