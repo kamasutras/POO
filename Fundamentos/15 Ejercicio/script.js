@@ -19,7 +19,7 @@ function operadores(operador) {
         operacion += operador;
     }
 }
-
+//hrth
 function calculo() {
     const pantalla = document.getElementById("pantalla");
     
