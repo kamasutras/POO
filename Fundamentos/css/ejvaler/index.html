@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>Profile</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">My Profile</a>
+            <a href="#">Find Connections</a>
+        </nav>
+        <button class="sign-out">Sign Out</button>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <div class="profile-card">
+                <div class="profile-header"></div>
+                <div class="profile-info">
+                    <img class="profile-pic" src="./images/jane-m.jpg" alt="Jane Doe"/>
+                    <h2 class="profile-name">Jane Doe</h2>
+                    <p><img class="profile-location" src="./icons/map-marker.png" alt="Location" width="12" height="18"> Seattle</p>
+                    <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                    <button class="edit-profile">⚙ edit profile</button>
+                </div>
+            </div>
+        
+        </main>
+        
+        <aside>
+            <div class="connection-card">
+                <div class="card-header">2 Connection Requests</div>
+                <div class="card-content">
+                    <div class="connection-item">
+                        <img class="connection-pic" src="./images/todd-s.jpg" alt="Todd E"/>
+                        <span>Todd E</span>
+                        <div class="connection-actions">
+                            <img src="./icons/accept-circle.png" class="action-icon" alt="Accept" />
+                            <img src="./icons/close-circle.png" class="action-icon" alt="Decline" />
+                        </div>
+                    </div>
+                    <div class="connection-item">
+                        <img class="connection-pic" src="./images/phil-s.jpg" alt="Phil K"/>
+                        <span>Phil K</span>
+                        <div class="connection-actions">
+                            <img src="./icons/accept-circle.png" class="action-icon" alt="Accept" />
+                            <img src="./icons/close-circle.png" class="action-icon" alt="Decline" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connection-card">
+                <div class="card-header">500+ Your Connections</div>
+                <div class="card-content">
+                    <div class="connection-item"><img class="connection-pic" src="./images/adrien-s.jpg" alt="Adrien D"/><span>Adrien D</span></div>
+                    <div class="connection-item"><img class="connection-pic" src="./images/anne-s.jpg" alt="Anne J"/><span>Anne J</span></div>
+                    <div class="connection-item"><img class="connection-pic" src="./images/alayne-s.jpg" alt="Alayne T"/><span>Alayne T</span></div>
+                    <div class="connection-item"><img class="connection-pic" src="./images/arry-s.jpg" alt="Arry Y"/><span>Arry Y</span></div>
+                    <a href="#" class="view-more">View More</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
